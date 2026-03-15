@@ -1,0 +1,12 @@
+commit	val_bpb	memory_gb	status	description
+a434e74	2.281324	3.0	keep	baseline (depth=8, MATRIX_LR=0.04, WEIGHT_DECAY=0.2)
+44a7e40	2.103120	6.7	keep	double depth from 8 to 16
+0fc3937	0.000000	0.0	crash	depth 24 OOM (855M params too large)
+2aafaa3	2.060291	8.6	keep	increase depth to 20
+92352e2	2.039531	8.6	keep	increase MATRIX_LR from 0.04 to 0.06
+8c6f5f5	0.000000	0.0	discard	increase MATRIX_LR from 0.06 to 0.08 (results unclear, reverted)
+8ab1682	2.007145	8.6	keep	reduce WEIGHT_DECAY from 0.2 to 0.1
+6bb7cf0	1.989364	8.6	keep	reduce WEIGHT_DECAY from 0.1 to 0.05
+3123ad8	1.977514	8.6	keep	reduce WEIGHT_DECAY from 0.05 to 0.02
+af3dcf9	1.993485	8.6	discard	increase WARMDOWN_RATIO from 0.5 to 0.7
+3ed11b3	0.000000	0.0	running	increase EMBEDDING_LR from 0.6 to 1.0
